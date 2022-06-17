@@ -11,8 +11,6 @@ import { Ionicons, Feather } from "@expo/vector-icons"
 import React, { useState } from "react";
 
 export default function App() {
-  const [text, setText] = useState("");
-  // console.log(text);
 
   return (
     <View style={styles.container}>
@@ -28,8 +26,6 @@ export default function App() {
           placeholder="Enter Username"
           style={styles.inputUser}
           placeholderTextColor="grey"
-          onChangeText={(text) => setText(text)}
-          value={text}
           autoCorrect={true}
           spellCheck={true} // para corregir errores
         />
